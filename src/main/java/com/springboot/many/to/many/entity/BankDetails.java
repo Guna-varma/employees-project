@@ -3,21 +3,28 @@ package com.springboot.many.to.many.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Entity(name = "Department")
+@Entity(name = "BankDetails")
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
-public class Department {
+public class BankDetails {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id",nullable = false)
+    @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Column(name = "departmentName")
-    private String departmentName;
+    @Column(name = "accountNumber")
+    private String accountNumber;
+
+    @Column(name = "ifscCode")
+    private String ifscCode;
 
     @Column(name = "location")
     private String location;
+
+
+
 }

@@ -1,12 +1,12 @@
 package com.springboot.many.to.many.service;
 
-import com.springboot.many.to.many.repository.ProjectRepository;
+import com.springboot.many.to.many.repository.BankDetailsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ProjectService {
+public class BankDetailsService {
 
     @Autowired
-    private ProjectRepository repo;
+    private BankDetailsRepository repo;
 }

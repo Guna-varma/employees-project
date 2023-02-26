@@ -1,0 +1,21 @@
+server:
+  port: 8909
+
+spring:
+  application:
+    name: employees-projects
+  datasource:
+    url: jdbc:mysql://localhost/empl_proj
+    username: root
+    password: qwerty
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL55Dialect
+        format_sql: true
+
+    hibernate:
+      ddl-auto: update
+      naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
